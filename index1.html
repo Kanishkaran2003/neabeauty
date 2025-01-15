@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample landing page...</title>
+    <!-- Bootstrap 5 js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- CSS File -->
+     <style>
+        body{
+            *{
+         
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-decoration: none;
+                box-sizing: border-box;
+                overflow: hidden;
+                
+                
+            }
+            header{
+                display: flex;
+
+            }
+            .text-header{
+                /* display: flex;
+                flex-direction: row; */
+               
+                position: absolute;
+                top: 50px;
+                left: 150px;
+            }
+            span{
+                font-size: 20px;
+                color: white;
+
+            }
+            h2{
+                font-family: Inter;
+            }
+            /* hero text */
+            .hero-text{
+                font-size: 30px;
+                top: 50px;
+                color: aliceblue;
+                position: relative;
+            }
+            .btn{
+                position: relative;
+                top: 10px;
+
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+           .flex-image{
+            display: flex;
+           }
+           .TrainingContents{
+            width: 100%;
+            height: 35rem;
+            background: #F0E8FD;
+           }
+           .Readybox,.Havebox{
+            height: 50vh;
+           }
+           /* .flex-item{
+            display: flex;
+
+           } */
+           footer{
+            background: #d6cfcf;
+            height: 50px;
+           }
+           .rounded-rupee{
+            border-radius: 50px;
+            background: #E4E9FD;
+           }
+           button{
+            color: black;
+            border-radius: 10px;
+            border: 0;
+           }
+           button:hover{
+            background-color: #ac7171;
+           }
+           input{
+            border-radius: 20px;
+            border: #8887FC;
+            color: white;
+            padding: 5px;
+            margin: 2px;
+    
+           }
+           
+           textarea{
+            resize: none;
+            width: 195px;
+            border-radius: 20px;
+           }
+           .text-p{
+            width: 15rem;
+           }
+           td{
+            color: #8887FC;
+           }
+           /* media Quries using responsive */
+            /* @media (max-width: 320px) {
+                body{
+                    margin: 0%;
+                    padding: 0%;
+
+                }
+                header{
+                    margin: 0%;
+                    padding: 0%;
+                }
+                a,span{
+                    font-size: 2rem;
+
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .img-fluid{
+                    width: 20rem;
+                    height: 20rem;
+                }
+                header{
+                    overflow: hidden;
+                    display: flex;
+                }
+            }
+            @media (min-width: 375px) {
+                .img-fluid{
+                    width: 25rem;
+                    height: 20rem;
+                }
+            }
+            @media (min-width:425px) {
+                .img-fluid{
+                    width: 35rem;
+                    height: 20rem;
+                }
+            }
+            @media (min-width: 1024px) {}
+            @media (min-width: 1220px) {}
+            @media (min-width: 1440px) {} */
+        }
+     </style>
+
+</head>
+<body >
+<!-- header image section -->
+    <header  class="d-flex flex-column flex-wrap">
+        <div class="text-header ">
+                <span><a href="http://">nea</a>beauty</span>
+                <div class="hero-text-selection">
+                    <p class="hero-text">
+                        Become an <br>
+                        Undereye Clearing <br>
+                        Technician and Boost <br>
+                        Your Income.
+                    </p>
+                    <button class="p-2 mt-5" type="button" >Enroll Now  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg> </button>
+                </div>
+        </div>
+        <img src="./pixelcut-export.png" class="img-fluid" alt="Responsive image" width="100%" >
+
+
+    </header>
+<!-- Why Undereye Cleanring? section -->
+    <section class="container">
+        <h2 class="header1 text-center mt-5">Why Undereye Cleanring?</h2>
+        <div class="section-image text-center">
+            <img src="./1.jpg"  class="img-fluid mt-4 rounded" alt="Responsive image" width="80%" height="80%">
+        </div>
+    </section>
+<!-- Undereye Cleanring Results section -->
+    <section>
+        <h2 class="header1 text-center mt-5">Undereye Cleanring Results</h2>
+        <div class="flex-image d-flex flex-wrap d-flex justify-content-center">
+            <img src="./wmremove-transformed.jpeg" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="60%">
+            <img src="./wmremove-transformed.jpeg" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="60%">
+            <img src="./wmremove-transformed.jpeg" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="60%">
+            <!-- <img src="./wmremove-transformed.jpeg" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="60%"> -->
+        </div>
+    </section>
+
+    <!-- Our Training Approach section -->
+    <section>
+        <h2 class="header1 text-center mt-5">Our Training Approach</h2>
+        <div class="section-image text-center">
+            <img src="./pixelcut-export.jpeg"  class="img-fluid mt-4 rounded" alt="Responsive image" width="70%" height="10%">
+        </div>
+    </section>
+<!-- Earning Potential -->
+    <section>
+        <h2 class="text-center mt-5">Earning Potential</h2>
+        <table class="mt-3  container table table-hover d-flex flex-sm-wrap justify-content-center" >
+            <tr>
+                <th>Price per
+                    Session</th>
+                <th>Session
+                    Duration</th>
+                <th>Session
+                    pre Day</th>
+                <th>Daily
+                    Earnings</th>
+                <th>Sessions
+                    pre Client</th>
+                <th>Earnings
+                    per Client</th>
+            </tr>
+            <tr class="rounded-rupee mt-2">
+                <td>$200-$400</td>
+                <td>1hour</td>
+                <td>3-4</td>
+                <td>$600-1600</td>
+                <td>2-3</td>
+                <td>$400-$1200</td>
+            </tr>
+        </table>
+    </section>
+    <!-- TrainingContents -->
+    <section>
+        <div class="TrainingContents mt-5 ">
+            <h2 class="header1 text-center mt-5">TrainingContents</h2>
+            <div class="d-flex justify-content-between mt-3 container flex-wrap">
+
+                <div class="text-box1">
+                    <h4>Introduction</h4>
+                    <p class="text-p mt-2 p-2">The Market Hygiene and
+                        Biosecurity. Skin Anatomy and the Undereye. Dark Circle Causes</p>
+                    <!-- <div style="width: 225.04px; height: 2px; transform: rotate(90deg); transform-origin: 0 0; border: 1px #D3CDFC solid"></div> -->
+                </div>
+                <div class="text-box2">
+                    <h4>First Steps</h4>
+                    <p class="text-p mt-2 p-2">Explanation of Technique Skin Healing and Number of Sessions. Colorimetry and Pigment Mixing Materiais Involved and Tips,</p>
+                </div>
+                <div class="text-box3">
+                    <h4>Training</h4>
+                    <p class="text-p mt-2 p-2">Training in Synthetic Skin Treatment in Models. Common Mistakes and Solutions</p>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </section>
+<!-- Satisfied Students -->
+    <section  >
+        <h2 class="header1 text-center mt-5">Satisfied Students</h2>
+        <div class="flex-image d-flex flex-wrap justify-content-center">
+            <img src="./Satisfied Students.webp" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="50%">
+            <img src="./Satisfied Students.webp" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="50%">
+            <img src="./Satisfied Students.webp" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="50%">
+            <!-- <img src="./Satisfied Students.webp" class="img-fluid mt-4 rounded" alt="Responsive image" width="30%" height="50%"> -->
+        </div>
+    </section>
+<!-- Ready to Boost Your income? -->
+    <section  style="background: linear-gradient(265deg, #C3B8F5 3%, #9C97FB 31%, #8887FC 84%)" class="mt-5 Readybox">
+        <div class="Ready to Boost Your income mt-5 ">
+            <h2 class="header1 text-center mt-4">Ready to Boost Your income?</h2>
+            
+            <div  class="d-flex justify-content-center mt-3">
+                <button type="button " class="p-2">Entroll Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></button>
+            </div>   
+        </div>
+    </section>
+<!-- FAQS -->
+    <section>
+        <div class="FAQS mt-5 ">
+            <h2 class="header1 text-center mt-5">FAQS</h2>
+           
+            <ul  class="d-flex flex-lg-column mt-3 container list-group list-group-flush">
+                <li class="list-group-item"> How long do results last?
+                    You can expect for clients 
+
+                    to return in 1-2 years.</li>
+                <li class="list-group-item">What licensing do I need to perform legally?</li>
+                <li class="list-group-item">How long do I have access to the training and certification?</li>
+                <li class="list-group-item">Is the training virtual? What if I'm a hands-on person?</li>
+                <li class="list-group-item"> Do I get access to an instructor?</li>
+                <li class="list-group-item">Is there a specific date or dates to start? 7. What happens after the training ends?</li>
+            </ul>
+                
+                
+            </div>
+            
+        </div>
+    </section>
+<!-- Have -->
+    <section style="background: linear-gradient(265deg, #C3B8F5 3%, #9C97FB 31%, #8887FC 84%)" class="mt-5 Havebox ">
+        <div class="Ready to Boost Your income mt-5 d-flex justify-content-around ">
+            
+            <div  class=" mt-0 ">
+                <h2 class="header1 text-left mt-0 ">
+                    Have <br>
+                    Questions? <br>
+                    Reach Out!</h2>
+                
+                <button type="button " class="p-2 mt-4" >Submit <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></button>
+            </div>   
+
+            <div class="from-data d-flex">
+                <form action="" method="get" class="flex-column">
+                    <input type="text" name="" id="" required placeholder="Name"><br>
+                    <input type="text" name="" id="" required placeholder="LastName"><br>
+                    <input type="text" name="" id="" required placeholder="Email"><br>
+                    <textarea name="" id="" placeholder="Message" required></textarea>
+                </form>
+            </div>
+
+        </div>
+        
+    </section>
+    <!-- footer -->
+    <footer>
+        <h5 class="text-center mt-3">@ 2025 by Al Rights Reserved</h5>
+    </footer>
+</body>
+</html>
