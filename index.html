@@ -22,22 +22,33 @@
                 text-decoration: none;
                 box-sizing: border-box;
                 overflow: hidden;
-                
+                /* font-size: clamp(1rem, 2vw, 3rem); */
                 
             }
             header{
                 display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-image: url('./pixelcut-export.png');
+                background-position: center;
+				background-repeat: no-repeat;
+				width: 100%; /* Full width */
+				height: 80vh; /* 50% of the viewport height */
+                background-size: cover;
+                font-size: clamp(1rem, 1vw, 2rem);
 
             }
             .text-header{
                 /* display: flex;
                 flex-direction: row; */
-               
-                position: absolute;
-                top: 50px;
-                left: 150px;
+                padding: 5rem 1rem;
+                color: white;
+               position: absolute; 
+                /* top: 50px; */
+               left: 130px; 
             }
             span{
+                
                 font-size: 20px;
                 color: white;
 
@@ -94,7 +105,7 @@
             background-color: #ac7171;
            }
            input{
-            border-radius: 20px;
+            border-radius: 10px;
             border: #8887FC;
             color: white;
             padding: 5px;
@@ -103,9 +114,9 @@
            }
            
            textarea{
-            resize: none;
-            width: 195px;
-            border-radius: 20px;
+            resize:horizontal;
+            width:200px;
+            border-radius: 10px;
            }
            .text-p{
             width: 15rem;
@@ -114,33 +125,26 @@
             color: #8887FC;
            }
            /* media Quries using responsive */
-            /* @media (max-width: 320px) {
-                body{
-                    margin: 0%;
-                    padding: 0%;
-
-                }
-                header{
-                    margin: 0%;
-                    padding: 0%;
-                }
-                a,span{
-                    font-size: 2rem;
-
-                }
-                p{
-                    font-size: 1rem;
-                }
-                .img-fluid{
-                    width: 20rem;
-                    height: 20rem;
-                }
-                header{
-                    overflow: hidden;
-                    display: flex;
-                }
+		   
+		   /* @media (max-width: 768px) {
+  .responsive-bg {
+    background-size: contain;
+    height: 30vh;
+  }
+} */
+             @media (max-width: 320px) {
+               body{
+                padding: auto;
+               }
+               header{
+                height: 90vh;
+               }
+               .text-header{
+                position: relative;
+                left: 30px;
+               }
             }
-            @media (min-width: 375px) {
+            /* @media (min-width: 375px) {
                 .img-fluid{
                     width: 25rem;
                     height: 20rem;
@@ -155,15 +159,15 @@
             @media (min-width: 1024px) {}
             @media (min-width: 1220px) {}
             @media (min-width: 1440px) {} */
-        }
+        } */
      </style>
 
 </head>
 <body >
 <!-- header image section -->
-    <header  class="d-flex flex-column flex-wrap">
-        <div class="text-header ">
-                <span><a href="http://">nea</a>beauty</span>
+    <header >
+        <div class="text-header">
+                <span class=""><a href="http://">nea</a>beauty</span>
                 <div class="hero-text-selection">
                     <p class="hero-text">
                         Become an <br>
@@ -176,7 +180,7 @@
                       </svg> </button>
                 </div>
         </div>
-        <img src="./pixelcut-export.png" class="img-fluid" alt="Responsive image" width="100%" >
+        <!-- <img src="./pixelcut-export.png" class="img-fluid" alt="Responsive image" width="100%" > -->
 
 
     </header>
