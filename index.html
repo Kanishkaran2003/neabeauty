@@ -308,7 +308,7 @@
         </div>
     </section>
 <!-- Have -->
-    <section style="background: linear-gradient(265deg, #C3B8F5 3%, #9C97FB 31%, #8887FC 84%)" class="mt-5 Havebox ">
+    <section style="background: linear-gradient(265deg, #C3B8F5 3%, #9C97FB 31%, #8887FC 84%)" class="mt-5 Havebox " name="contact" method="POST" data-netlify="true">
         <div class="Ready to Boost Your income mt-5 d-flex justify-content-around ">
             
             <div  class=" mt-0 ">
@@ -323,12 +323,31 @@
             </div>   
 
             <div class="from-data d-flex">
-                <form action="" method="get" class="flex-column">
-                    <input type="text" name="" id="" required placeholder="Name"><br>
-                    <input type="text" name="" id="" required placeholder="LastName"><br>
-                    <input type="text" name="" id="" required placeholder="Email"><br>
-                    <textarea name="" id="" placeholder="Message" required></textarea>
+                <form name="contact" method="POST" data-netlify="true" class="flex-column">
+                    <input type="text" name="name" id="" required placeholder="Name"><br>
+                    <input type="text" name="lastname" id="" required placeholder="LastName"><br>
+                    <input type="text" name="email" id="" required placeholder="Email"><br>
+                    <textarea name="message" id="" placeholder="Message" required></textarea>
                 </form>
+		    <script>
+			    const handleSubmit = event => {
+			  event.preventDefault();
+			
+			  const myForm = event.target;
+			  const formData = new FormData(myForm);
+			
+			  fetch("/", {
+			    method: "POST",
+			    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			    body: new URLSearchParams(formData).toString()
+			  })
+			    .then(() => console.log("Form successfully submitted"))
+			    .catch(error => alert(error));
+			};
+			
+			document.querySelector("form").addEventListener("submit", handleSubmit);
+
+		    </script>
             </div>
 
         </div>
