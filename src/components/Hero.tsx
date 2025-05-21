@@ -1,4 +1,4 @@
-import logo from '../src/img/image1.png';
+
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-scroll';
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
-        src={logo} 
+          src="../src/img/image1.png" 
           alt="Woman touching face" 
           className="h-full object-cover object-center"
         />
