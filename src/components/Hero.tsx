@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
-        src={logo} 
+        src="./_src_/_img_/image1.png"
           alt="Woman touching face" 
           className="h-full object-cover object-center"
         />
